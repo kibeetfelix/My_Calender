@@ -48,3 +48,13 @@
     height: 50px;
     display: flex;
 }
+
+.weekdays div {
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
