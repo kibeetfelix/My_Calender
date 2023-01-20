@@ -13,3 +13,12 @@
     justify-content: center;
     align-items: center;
 }
+
+.calender {
+    background-color: black;
+    color: lightgray;
+    width: 450px;
+    height: 520px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);
+}
