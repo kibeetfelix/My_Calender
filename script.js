@@ -1,9 +1,10 @@
 const monthEl = document.querySelector(".date h1")
 const fullDateEl = document.querySelector(".date p")
+const daysEl = document.querySelector(".days")
 
 
 const monthInx = new Date().getMonth();
-const lastDay = new Date(new Date().getFullYear(), monthInx - 1, 0).getDate();
+const lastDay = new Date(new Date().getFullYear(), monthInx + 1, 0).getDate();
 console.log(lastDay);
 
 const months = [
@@ -23,3 +24,11 @@ const months = [
 
 monthEl.innerText = months[monthInx];
 fullDateEl.innerText = new Date().toDateString();
+
+let days = ""
+
+for (let i = 1; i <= lastDay; i++) {
+    days += `<div>${i}</div>`;
+}
+
+daysEl.innerHTML = days;
