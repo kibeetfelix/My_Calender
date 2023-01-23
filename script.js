@@ -1,4 +1,5 @@
 const monthEl = document.querySelector(".date h1")
+const fullDateEl = document.querySelector(".date p")
 
 const monthInx = new Date().getMonth();
 
@@ -19,3 +20,4 @@ const months = [
 ];
 
 monthEl.innerText = months[monthInx];
+fullDateEl.innerText = new Date();
