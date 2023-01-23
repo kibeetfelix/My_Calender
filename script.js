@@ -1,5 +1,6 @@
-const monthInx = new Date().getMonth();
+const monthEl = document.querySelector(".date h1")
 
+const monthInx = new Date().getMonth();
 
 
 const months = [
@@ -17,4 +18,4 @@ const months = [
     "December",
 ];
 
-console.log(months);
+monthEl.innerText = months[monthInx];
