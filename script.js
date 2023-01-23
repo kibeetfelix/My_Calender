@@ -20,4 +20,4 @@ const months = [
 ];
 
 monthEl.innerText = months[monthInx];
-fullDateEl.innerText = new Date();
+fullDateEl.innerText = new Date().toDateString();
