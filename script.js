@@ -1,8 +1,10 @@
 const monthEl = document.querySelector(".date h1")
 const fullDateEl = document.querySelector(".date p")
 
-const monthInx = new Date().getMonth();
 
+const monthInx = new Date().getMonth();
+const lastDay = new Date(new Date().getFullYear(), monthInx - 1, 0).getDate();
+console.log(lastDay);
 
 const months = [
     "January",
